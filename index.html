@@ -6,10 +6,40 @@
 	<head>
 	
 		<link rel="stylesheet" href="style.css">
+		<>
 	
 	</head>
 
 	<body>
+	
+		<div id="main">
+		
+			<h2>Gradient Text Generator</h2>
+			<div id="gradientgen">
+			
+				<script type="text/javascript" src="gradient.js"></script>
+				<textarea id="inputmessage" onkeyup="onInputChange(event, this)">Enter your message here</textarea>
+				<div id="options">
+			
+					<div id="startcol" class="colourselect">
+					
+						<div id="startprev" class="preview"></div>
+						<textarea class="hexinput" onkeyup="onColourChange(event, this, true)">ffffff</textarea>
+						
+					</div>
+					<div id="endcol" class="colourselect">
+						
+						<div id="endprev" class="preview"></div>
+						<textarea class="hexinput" onkeyup="onColourChange(event, this, false)">ffffff</textarea>
+						
+					</div>
+			
+				</div>
+				<p id="output"></p>
+				
+			</div>
+			
+		</div>
 	
 		<div id="pagetop">
 		
