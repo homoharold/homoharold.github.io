@@ -16,11 +16,11 @@ function clerp(alpha) {
 	var resultant = ""
 	
 	for (var i = 0; i < 6; i += 2) {
-		start[i / 2] = Number("0x" + startCol.substring(i, i + 2));
-		end[i / 2] = Number("0x" + endCol.substring(i, i + 2));
+		start[i / 2] = Number("0x" + startCol.substr(i, 2));
+		end[i / 2] = Number("0x" + endCol.substr(i, 2));
 	}
 	for (var i = 0; i < 3; i++) {
-		resultant = resultant.concat((lerp(start[i], end[i], alpha)).toString(16));
+		resultant = resultant.concat(('0' + (lerp(start[i], end[i], alpha)).toString(16)).substr(-2));
 	}
 	return resultant;
 }
