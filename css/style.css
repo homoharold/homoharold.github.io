@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'CONFLICTDRIPS';
+    src: url('../fonts/CONFLICTDRIPS/CONFLICTDRIPSPERSONALUSE-Bold.eot');
+    src: url('../fonts/CONFLICTDRIPS/CONFLICTDRIPSPERSONALUSE-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CONFLICTDRIPS/CONFLICTDRIPSPERSONALUSE-Bold.woff2') format('woff2'),
+        url('../fonts/CONFLICTDRIPS/CONFLICTDRIPSPERSONALUSE-Bold.woff') format('woff'), 
+        url('../fonts/CONFLICTDRIPS/CONFLICTDRIPSPERSONALUSE-Bold.ttf') format('truetype'),
+        url('../fonts/CONFLICTDRIPS/CONFLICTDRIPSPERSONALUSE-Bold.svg#CONFLICTDRIPSPERSONALUSE-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	font-size: 62.5%; /* 10px = 1rem */
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+}
+
+h1 {
+	font-family: CONFLICTDRIPS;
+	font-size:4.8rem;
+	color: red;
+	text-align: center;
+	text-shadow: -0.5rem 0.5rem 0.25rem #e008, -1rem 1rem 0.5rem #d007, -1.5rem 1.5rem 0.75rem #c006, -2rem 2rem 1rem #b005, -2.5rem 2.5rem 1.5rem #a004, -3rem 3rem 2rem #9003;
+}
+
+h2 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 2.4rem;
+	color: white;
+	text-align: center;
+	text-shadow: 0 0.5rem black, 10rem 1rem 0.5rem white, -10rem 1rem 0.5rem white;
+}
+
+ul {
+	display: table;
+	margin: 0 auto;
+}
+
+ul > * {
+	font-size: 1.6rem;
+	color: yellow;
+}
+
+a {
+	color: white; 
+}
+
+.skullBar {
+	margin: auto;
+	width: 100%;
+	background-image: url('../images/spooky.gif');
+}
