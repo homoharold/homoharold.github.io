@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
 	function randomiseColor() {
 		logo.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
 	}
-	randomiseColour();
+	randomiseColor();
 	
 	setInterval(function() {
 		size = {x: parseInt(style.width), y: parseInt(style.height)};
