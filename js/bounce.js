@@ -9,7 +9,7 @@ window.addEventListener("load", function() {
 	
 	const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 	
-	function randomiseColour() {
+	function randomiseColor() {
 		logo.style.color = "#" + Math.floor(Math.random()*16777215).toString(16);
 	}
 	randomiseColour();
@@ -23,11 +23,11 @@ window.addEventListener("load", function() {
 		
 		if (pos.x >= region.x - size.x || pos.x <= 0) {
 			velo.x = -velo.x;
-			randomiseColour();
+			randomiseColor();
 		}
 		if (pos.y >= region.y - size.y || pos.y <= 0) {
 			velo.y = -velo.y;
-			randomiseColour();
+			randomiseColor();
 		}
 		
 		logo.style.left = pos.x + "px";
