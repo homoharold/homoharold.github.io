@@ -11,10 +11,10 @@ window.addEventListener("load", function() {
 	
 	const clamp = (num, min, max) => Math.min(Math.max(num, min), max); // clamps a number between min and max
 	
-	function randomiseColour() {
-		logo.style.color = "#" + Math.floor(Math.random() * 16777215).toString(16); // set colour to random hex value
+	function randomiseColor() {
+		logo.style.color = "#" + Math.floor(Math.random()*16777215).toString(16); // set text colour to random hex value
 	}
-	randomiseColour();
+	randomiseColor();
 	
 	setInterval(function() {
 		limit = {
@@ -27,11 +27,11 @@ window.addEventListener("load", function() {
 		
 		if (pos.x >= limit.x || pos.x <= 0) {
 			velo.x = -velo.x;
-			randomiseColour();
+			randomiseColor();
 		}
 		if (pos.y >= limit.y || pos.y <= 0) {
 			velo.y = -velo.y;
-			randomiseColour();
+			randomiseColor();
 		}
 		
 		logo.style.left = pos.x + "px";
