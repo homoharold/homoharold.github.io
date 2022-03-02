@@ -12,7 +12,7 @@ window.addEventListener("load", function() { // wait for page to load before con
 	const clamp = (num, min, max) => Math.min(Math.max(num, min), max); // clamps a number between min and max
 	
 	function randomiseColor() {
-		logo.style.color = "#" + Math.floor(Math.random() * ParseInt("ffffff", 16)).toString(16); // set text colour to random hex value
+		logo.style.color = "#" + Math.floor(Math.random() * parseInt("ffffff", 16)).toString(16); // set text colour to random hex value
 	}
 	randomiseColor();
 	
